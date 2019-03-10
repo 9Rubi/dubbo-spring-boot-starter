@@ -70,7 +70,7 @@ public class DubboProviderAutoConfiguration extends DubboCommonAutoConfiguration
         this.parseRegistries(registries, this.properties, environment, beanName, "registry"));
     String[] protocols = service.protocol();
     serviceConfig.setProtocols(
-        this.parseProtocols(protocols, this.properties, environment, beanName, "registry"));
+        this.parseProtocols(protocols, this.properties, environment, beanName, "protocol"));
     String monitor = service.monitor();
     serviceConfig.setMonitor(
         this.parseMonitor(monitor, this.properties, environment, beanName, "monitor", monitor));
